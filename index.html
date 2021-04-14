@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Digital Clock</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+        <div class="container">
+            <div id="bangalore"></div>
+            <div class='alarm'>
+                <h2 class='text'>Alarm</h2>
+                <div class='set-hour'>
+                    <input class="hrs" id='hr' type='number' min='0' max="23" placeholder="00">
+                </div>
+                <div  class='set-minutes'>
+                     <input class="mins" id='min' type='number' min='0' max="59" placeholder="00">
+                </div>
+                <div class="button">
+                    <button id='setButton'>Set Alarm</button>
+                     <button class="reset" id='resetbutton' onClick='ResetAlarm()'>Reset Alarm</button>
+                </div>
+               
+                
+                    <audio id='alarmSound' preload="metadata">
+                        <source crossorigin='anonymous' id='audio' type='audio/mpeg' src='Morning_Alarm.mp3'> 
+                    </audio>
+               
+            </div>
+        </div>
+        <script type="text/jscript" src="digitalclock.js"></script>
+    </body>
+</html>

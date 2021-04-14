@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: auto;
+    margin: 0;
+    height: 617px;
+   
+   /* font-family: 'Orbitron', sans-serif;
+    font-family: 'Monoton', cursive;
+    font-family: 'Faster One', cursive;*/
+    
+}
+.container{
+    color:#7FFF00;
+    text-align: center;
+    margin:0 200px;
+    height: 100%;
+}
+.alarm{
+    top: 150px;
+    text-align: left;
+    padding:  0 0 0 30px;
+    color:#248f24;
+    position: absolute;
+}
+.btn{
+    border: none;
+    color: #248f24;
+    background-color:black;
+    font-size: 50px;
+    font-family:'Faster One', cursive';
+}
+
+.time{
+    font-size: 200px;
+    text-align: left;
+    position: absolute;
+    top : 200px
+}
+.mdy{
+    top: 405px;
+    position: absolute;
+}
+.seconds, .date, .year, .month, .day{
+    font-size : 50px!important;
+    color:#248f24;
+    padding: 0 0 0 30px;
+}
+#setButton, #resetbutton{
+  background-color: black;
+   
+    outline-color: blue;
+  color: #248f24;
+   
+  height: 50px;
+  font-size: 20px;
+  position: absolute;
+  
+  top: 42px;
+  border-color: cyan;
+ 
+}
+#resetbutton{
+  left: 440px!important;
+}
+#setButton{
+    left: 325px;
+}
+#setButton:hover, #resetbutton:hover{
+  color:#00fff3;
+  border-color: #00fff3;
+  background-color:#0c36d0;
+    outline: none;
+    
+}
+#setButton:active{
+  border-color: blue;
+ 
+}
+.month{
+    padding-left: 15px;
+    text-align: start!important;
+}
+.year{
+    padding: 0 0px 0 25px;
+}
+.second{
+    padding-left: 8px
+}
+.day{
+    padding-left:30px;
+    text-align: right!important;
+    position: absolute;
+}
+.alarm{
+     color:#248f24;
+    text-align: center;
+    margin:0 200px;
+    width: inherit;
+    padding: 0;
+    display: flex;
+    text-align: left;
+    top : 125px;
+}
+.text{
+    font-size: 50px;
+    padding:0 10px;
+}
+.set-hour, .set-minutes{
+    position: relative;
+    width: 75px;
+    height: 50px;
+    font-size: 40px;
+}
+.hrs, .mins{
+    position:inherit;
+   color: #248f24;
+    border: 1px solid cyan;
+    background-color: black;
+    top: 42px;
+    margin: 0 5px 0 10px;
+    width: 70px;
+    font-size: 40px;
+    font-family: 'digital-clock-font';
+}
